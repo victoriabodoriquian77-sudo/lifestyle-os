@@ -1,6 +1,12 @@
 # Personal Lifestyle OS
 
+**App online:** https://victoriabodoriquian77-sudo.github.io/lifestyle-os/
+
 Centro de operaciones personal para entrenamiento, nutrición, hábitos y productividad. Todo funciona en el navegador, sin cuentas ni servidores: los datos se guardan en el dispositivo y se pueden exportar cuando quieras.
+
+## Publicación
+
+La app se publica sola en GitHub Pages al hacer push a `main` (workflow en `.github/workflows/deploy.yml`). El build usa rutas relativas para funcionar bajo `/lifestyle-os/`.
 
 ## Cómo correrlo
 
