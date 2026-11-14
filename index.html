@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#07080a" />
+    <meta name="description" content="Personal Lifestyle OS — entrenamiento, nutrición, hábitos y productividad en un solo lugar." />
+    <meta property="og:title" content="Personal Lifestyle OS" />
+    <meta property="og:description" content="Entrenamiento, nutrición, hábitos, productividad y progreso en un sistema personal." />
+    <meta property="og:type" content="website" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Personal Lifestyle OS</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // Aplica el tema guardado antes del primer paint para evitar parpadeos.
+      try {
+        var raw = localStorage.getItem('plos-theme');
+        if (raw === 'light') document.documentElement.classList.remove('dark');
+        if (raw === 'light') document.documentElement.dataset.theme = 'light';
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
